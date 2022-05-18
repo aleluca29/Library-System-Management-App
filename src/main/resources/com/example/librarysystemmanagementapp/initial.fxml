@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="239.0" fitWidth="324.0" layoutX="-6.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\Alexandra\Desktop\a\5652e9ec-2fa3-460b-8812-cdd4abf61b67.jpg" />
+                  <Image url="D:\LibrarySystemManagementApp\src\main\resources\com\example\librarysystemmanagementapp\Img\5652e9ec-2fa3-460b-8812-cdd4abf61b67.jpg" />
                </image>
             </ImageView>
          </children></AnchorPane>
@@ -34,7 +34,7 @@
             </Label>
             <ImageView fitHeight="95.0" fitWidth="71.0" layoutX="79.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\Alexandra\Desktop\a\279678652_305137018465144_3087291222441037550_n.png" />
+                  <Image url="D:\LibrarySystemManagementApp\src\main\resources\com\example\librarysystemmanagementapp\Img\279678652_305137018465144_3087291222441037550_n.png" />
                </image>
             </ImageView>
             <Label fx:id="wrongLogIn" layoutX="40.0" layoutY="190.0" prefHeight="37.0" prefWidth="527.0" textFill="RED">
