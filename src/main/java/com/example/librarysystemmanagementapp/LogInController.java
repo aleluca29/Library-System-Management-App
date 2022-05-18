@@ -2,14 +2,14 @@ package com.example.librarysystemmanagementapp;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.fxml.Initializable;
+import java.util.ResourceBundle;
+import java.net.URL;
 
 import java.io.IOException;
 
-public class LogInController {
+public class LogInController implements Initializable {
 
     public LogInController() {
 
@@ -27,6 +27,11 @@ public class LogInController {
     @FXML
     private PasswordField password;
 
+    @FXML
+    private ChoiceBox<String> logInChoiceBox;
+
+    private String [] options={"Customer","Library Staff"};
+
     public void userLogIn(ActionEvent event) throws IOException {
         checkLogin();
     }
@@ -43,4 +48,10 @@ public class LogInController {
             wrongLogIn.setText("Wrong username or password");
         }
     }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        logInChoiceBox.getItems().addAll(options);
+    }
+
 }
