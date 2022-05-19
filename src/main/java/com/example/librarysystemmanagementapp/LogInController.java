@@ -1,5 +1,8 @@
 package com.example.librarysystemmanagementapp;
 
+import com.example.librarysystemmanagementapp.exceptions.UsernameAlreadyExistsException;
+import com.example.librarysystemmanagementapp.user.Users;
+import com.example.librarysystemmanagementapp.user.UsersList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -32,20 +35,39 @@ public class LogInController implements Initializable {
 
     private String [] options={"Customer","Library Staff"};
 
+
     public void userLogIn(ActionEvent event) throws IOException {
         checkLogin();
     }
 
-    private void checkLogin() throws IOException {
-        Main m = new Main();
-        if (username.getText().toString().equals("Ale") && password.getText().toString().equals("1234")) {
-            wrongLogIn.setText("Success!");
-
-            m.changeScene("afterLogin.fxml");
-        } else if (username.getText().isEmpty() && password.getText().isEmpty()) {
-            wrongLogIn.setText("Please enter your data");
-        } else {
-            wrongLogIn.setText("Wrong username or password");
+    @FXML
+    private void checkLogin() throws IOException{
+        if(username.getText().isEmpty() && password.getText().isEmpty() && logInChoiceBox.getValue()==null)
+        {
+            wrongLogIn.setText("Please enter all your data.");
+        }
+        else if(username.getText().isEmpty() && password.getText().isEmpty() && logInChoiceBox.getValue()!=null)
+        {
+            wrongLogIn.setText("PLease enter your username and password.");
+        }
+        else
+        if(username.getText().isEmpty())
+        {
+            wrongLogIn.setText("Please enter your username.");
+        }
+        else if(password.getText().isEmpty())
+        {
+            wrongLogIn.setText("Please enter your password.");
+        }
+        else if(logInChoiceBox.getValue()==null)
+        {
+            wrongLogIn.setText("Please select your status.");
+        }
+        else if(UsersList.checkUserCredentials(new Users(username.getText(),password.getText(),logInChoiceBox.getValue())))
+        {
+            Main m=new Main();
+            if(logInChoiceBox.getValue().equals("Customer"))
+                m.changeScene("afterLogIn");
         }
     }
 

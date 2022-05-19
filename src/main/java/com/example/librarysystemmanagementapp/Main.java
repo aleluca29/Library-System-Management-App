@@ -8,22 +8,23 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Main extends Application {
 
+public class Main extends Application {
     private static Stage stg;
 
     @Override
-    public void start(Stage primarystage) throws IOException {
-        stg = primarystage;
-        primarystage.setResizable(false);
-        Parent root=FXMLLoader.load(getClass().getResource("initial.fxml"));
-        primarystage.setTitle("Library System Management");
-        primarystage.setScene(new Scene(root,900,650));
-        primarystage.show();
+    public void start(Stage primaryStage) throws IOException {
+        stg = primaryStage;
+        primaryStage.setResizable(false);
+        Parent root = FXMLLoader.load(getClass().getResource("initial.fxml"));
+        primaryStage.setTitle("Library System Management");
+        primaryStage.setScene(new Scene(root,900,650));
+        primaryStage.show();
     }
 
-    public void changeScene(String fxml) throws IOException{
-        Parent pane= FXMLLoader.load(getClass().getResource(fxml));
+    public void changeScene(String fxml) throws IOException
+    {
+        Parent pane=FXMLLoader.load(getClass().getResource(fxml));
         stg.getScene().setRoot(pane);
     }
 
