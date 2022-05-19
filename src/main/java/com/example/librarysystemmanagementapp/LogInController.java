@@ -48,7 +48,11 @@ public class LogInController implements Initializable {
         }
         else if(username.getText().isEmpty() && password.getText().isEmpty() && logInChoiceBox.getValue()!=null)
         {
-            wrongLogIn.setText("PLease enter your username and password.");
+            wrongLogIn.setText("Please enter your username and password.");
+        }
+        else if(username.getText().isEmpty() && !password.getText().isEmpty() && logInChoiceBox.getValue()==null)
+        {
+            wrongLogIn.setText("Please enter your username and status.");
         }
         else
         if(username.getText().isEmpty())
@@ -74,6 +78,11 @@ public class LogInController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         logInChoiceBox.getItems().addAll(options);
+    }
+
+    public void moveToRegisterPage() throws IOException{
+        Main m = new Main();
+        m.changeScene("registerScene.fxml");
     }
 
 }
