@@ -4,56 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="216391a3-e5dd-447c-b795-5f8e52eda015" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/servicies/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/servicies/Register.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibrarySystemManagementApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LibrarySystemManagementApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/RegisterScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/RegisterScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/exceptions/UsernameAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/user/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/user/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/user/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/user/UsersList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/initial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/initial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/registerScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/registerScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/LogInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/LogInController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/RegisterScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/RegisterScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/exceptions/UsernameAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/exceptions/UsernameAlreadyExistsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/initial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/initial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/registerScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/registerScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/UsersList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/UsersList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/UsersList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/user/UsersList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="216391a3-e5dd-447c-b795-5f8e52eda015" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
