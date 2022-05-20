@@ -58,7 +58,7 @@
                   <Font name="Lucida Calligraphy Italic" size="18.0" />
                </font>
             </Button>
-            <ChoiceBox fx:id="logInChoiceBox" layoutX="216.0" layoutY="324.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="role" layoutX="216.0" layoutY="324.0" prefWidth="150.0" />
             <Label layoutX="150.0" layoutY="431.0" text="Do you not have an account?" textFill="WHITE">
                <font>
                   <Font name="Lucida Calligraphy Italic" size="18.0" />

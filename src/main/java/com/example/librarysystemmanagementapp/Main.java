@@ -1,5 +1,7 @@
 package com.example.librarysystemmanagementapp;
 
+import com.example.librarysystemmanagementapp.user.UsersList;
+import com.example.librarysystemmanagementapp.servicies.Register;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,6 +16,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+        UsersList.loadUsersFromFile();
         stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("initial.fxml"));

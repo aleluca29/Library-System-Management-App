@@ -31,7 +31,7 @@ public class LogInController implements Initializable {
     private PasswordField password;
 
     @FXML
-    private ChoiceBox<String> logInChoiceBox;
+    private ChoiceBox<String> role;
 
     private String [] options={"Customer","Library Staff"};
 
@@ -42,15 +42,15 @@ public class LogInController implements Initializable {
 
     @FXML
     private void checkLogin() throws IOException{
-        if(username.getText().isEmpty() && password.getText().isEmpty() && logInChoiceBox.getValue()==null)
+        if(username.getText().isEmpty() && password.getText().isEmpty() && role.getValue()==null)
         {
             wrongLogIn.setText("Please enter all your data.");
         }
-        else if(username.getText().isEmpty() && password.getText().isEmpty() && logInChoiceBox.getValue()!=null)
+        else if(username.getText().isEmpty() && password.getText().isEmpty() && role.getValue()!=null)
         {
             wrongLogIn.setText("Please enter your username and password.");
         }
-        else if(username.getText().isEmpty() && !password.getText().isEmpty() && logInChoiceBox.getValue()==null)
+        else if(username.getText().isEmpty() && !password.getText().isEmpty() && role.getValue()==null)
         {
             wrongLogIn.setText("Please enter your username and status.");
         }
@@ -63,21 +63,34 @@ public class LogInController implements Initializable {
         {
             wrongLogIn.setText("Please enter your password.");
         }
-        else if(logInChoiceBox.getValue()==null)
+        else if(role.getValue()==null)
         {
             wrongLogIn.setText("Please select your status.");
         }
-        else if(UsersList.checkUserCredentials(new Users(username.getText(),password.getText(),logInChoiceBox.getValue())))
+        else if(UsersList.checkUserCredentials(new Users(username.getText(),password.getText(),role.getValue())))
         {
             Main m=new Main();
-            if(logInChoiceBox.getValue().equals("Customer"))
-                m.changeScene("afterLogIn");
+            if(role.getValue().equals("Customer"))
+            {
+                m.changeScene("afterLogin.fxml");
+            }
+            else
+                if(role.getValue().equals("Library Staff"))
+                {
+                    m.changeScene("afterLogin.fxml");
+                }
+
         }
+        else
+        {
+            wrongLogIn.setText("The information are introduced wrong.");
+        }
+
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        logInChoiceBox.getItems().addAll(options);
+        role.getItems().addAll(options);
     }
 
     public void moveToRegisterPage() throws IOException{

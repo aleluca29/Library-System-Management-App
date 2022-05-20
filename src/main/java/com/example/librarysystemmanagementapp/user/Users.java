@@ -3,18 +3,18 @@ package com.example.librarysystemmanagementapp.user;
 public class Users {
     public String username;
     public String password;
-    public String status;
+    public String role;
 
     public Users()
     {
 
     }
 
-    public Users(String username, String password, String status)
+    public Users(String username, String password, String role)
     {
         this.username=username;
         this.password=password;
-        this.status=status;
+        this.role=role;
     }
     public String getUsername()
     {
@@ -38,15 +38,15 @@ public class Users {
 
         this.password=password;
     }
-    public String getStatus()
+    public String getRole()
     {
 
-        return status;
+        return role;
     }
-    public void setStatus()
+    public void setRole()
     {
 
-        this.status=status;
+        this.role=role;
     }
     @Override
     public boolean equals(Object o)
@@ -60,7 +60,7 @@ public class Users {
             return false;
         if(!password.equals(user.password))
             return false;
-        return status.equals(user.status);
+        return role.equals(user.role);
 
     }
 }

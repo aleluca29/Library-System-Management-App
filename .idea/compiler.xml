@@ -9,8 +9,5 @@
         <module name="LibrarySystemManagementApp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="LibrarySystemManagementApp" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

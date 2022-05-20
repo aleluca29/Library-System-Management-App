@@ -1,5 +1,7 @@
 package com.example.librarysystemmanagementapp.user;
 
+import com.example.librarysystemmanagementapp.Main;
+import com.example.librarysystemmanagementapp.user.Users;
 import com.example.librarysystemmanagementapp.exceptions.UsernameAlreadyExistsException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -12,10 +14,9 @@ import java.util.Objects;
 
 public class UsersList {
 
-    private static ArrayList<Users> users= new ArrayList<>();
+    private static ArrayList<Users> users = new ArrayList<>();
 
-    public static void addUser(Users newUser) throws UsernameAlreadyExistsException
-    {
+    public static void addUser(Users newUser) throws UsernameAlreadyExistsException {
         chechkUserDoesNotAlreadyExist(newUser.getUsername());
         users.add(newUser);
     }
@@ -26,32 +27,27 @@ public class UsersList {
                 throw new UsernameAlreadyExistsException(username);
         }
     }
-    public static boolean checkUserCredentials(Users user)
-    {
+
+    public static boolean checkUserCredentials(Users user) {
         return users.contains(user);
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return users.toString();
     }
-    public static void loadUsersFromFile() throws IOException
-    {
-        ObjectMapper objectMapper= new ObjectMapper();
-        try
-        {
-            users= objectMapper.readValue(Paths.get("users.json").toFile(),new TypeReference<ArrayList<Users>>(){
 
+    public static void loadUsersFromFile() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            users = objectMapper.readValue(Paths.get("users.json").toFile(), new TypeReference<>() {
             });
-        }catch(JsonParseException e)
-        {
+        } catch (JsonParseException e) {
             e.printStackTrace();
         }
     }
 
-    public static ArrayList<Users> getUsers()
-    {
+    public static ArrayList<Users> getUsers() {
         return users;
     }
 
