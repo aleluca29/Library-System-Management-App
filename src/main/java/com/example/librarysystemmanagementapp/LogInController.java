@@ -72,12 +72,12 @@ public class LogInController implements Initializable {
             Main m = new Main();
             if(role.getValue().equals("Customer"))
             {
-                m.changeScene("afterLogin.fxml");
+                m.changeScene("afterLoginCustomer.fxml");
             }
             else
                 if(role.getValue().equals("Library Staff"))
                 {
-                    m.changeScene("afterLogin.fxml");
+                    m.changeScene("afterLoginLibraryStaff.fxml");
                 }
 
         }
