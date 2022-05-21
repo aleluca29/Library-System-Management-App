@@ -30,4 +30,8 @@
   "username" : "Raresutu",
   "password" : "1234",
   "role" : "Library Staff"
+}, {
+  "username" : "test",
+  "password" : "test",
+  "role" : "Library Staff"
 } ]

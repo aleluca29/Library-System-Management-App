@@ -69,7 +69,7 @@ public class LogInController implements Initializable {
         }
         else if(UsersList.checkUserCredentials(new Users(username.getText(),password.getText(),role.getValue())))
         {
-            Main m=new Main();
+            Main m = new Main();
             if(role.getValue().equals("Customer"))
             {
                 m.changeScene("afterLogin.fxml");
