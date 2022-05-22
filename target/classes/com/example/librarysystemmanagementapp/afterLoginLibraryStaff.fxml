@@ -112,12 +112,11 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TableView fx:id="tableOfBooks" editable="true" layoutX="105.0" layoutY="69.0" prefHeight="375.0" prefWidth="691.0" style="-fx-background-color: transparent; -fx-view-order: ascending;">
+                  <TableView fx:id="tableOfBooks" editable="true" layoutX="105.0" layoutY="69.0" prefHeight="375.0" prefWidth="691.0">
                     <columns>
-                      <TableColumn fx:id="titleColumn" prefWidth="193.0" text="title" />
-                      <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="176.0" text="author" />
-                        <TableColumn fx:id="descrColumn" prefWidth="194.0" text="descr" />
-                        <TableColumn fx:id="dateColumn" prefWidth="127.0" text="return date" />
+                      <TableColumn fx:id="titleColumn" prefWidth="222.0" text="title" />
+                      <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="215.0" text="author" />
+                        <TableColumn fx:id="dateColumn" prefWidth="251.0" text="return date" />
                     </columns>
                      <effect>
                         <Glow />

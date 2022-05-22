@@ -1,0 +1,13 @@
+[ {
+  "title" : "Ale",
+  "author" : "1234",
+  "returnDate" : "Customer"
+}, {
+  "title" : "Adi",
+  "author" : "123",
+  "returnDate" : "Library Staff"
+}, {
+  "title" : "Gigi",
+  "author" : "12345",
+  "returnDate" : "Customer"
+} ]
