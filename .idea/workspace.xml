@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e544019-a887-452d-b86e-7c1839e81c70" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653082453768</updated>
       <workItem from="1653082455302" duration="63000" />
-      <workItem from="1653082554846" duration="12485000" />
+      <workItem from="1653082554846" duration="12968000" />
+      <workItem from="1653208734942" duration="3070000" />
     </task>
     <servers />
   </component>
@@ -112,5 +115,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

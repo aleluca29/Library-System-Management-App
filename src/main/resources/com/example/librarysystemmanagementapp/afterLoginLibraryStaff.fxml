@@ -1,19 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #162C53;" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #162C53;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
-    <Tab text="Untitled Tab 1">
+    <Tab text="Modify list">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="37.0" layoutY="25.0" text="Add/Remove books from the library" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="31.0" />
+                     </font>
+                  </Label>
+                  <ListView layoutX="40.0" layoutY="157.0" prefHeight="200.0" prefWidth="820.0" />
+                  <Label layoutX="398.0" layoutY="108.0" text="Library" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="41.0" layoutY="414.0" prefHeight="52.0" prefWidth="616.0" promptText="Enter book details">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="44.0" layoutY="368.0" text="Please add abook" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="721.0" layoutY="417.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="21.0" />
+                     </font>
+                  </Button>
+                  <ChoiceBox layoutX="40.0" layoutY="543.0" prefHeight="42.0" prefWidth="618.0" />
+                  <Label layoutX="41.0" layoutY="483.0" text="Select book to be removed" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="721.0" layoutY="541.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Remove" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="21.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
       </content>
     </Tab>
-    <Tab text="Untitled Tab 2">
+    <Tab text="Process orders">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Label layoutX="273.0" layoutY="69.0" text="Orders to be processed" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="85.0" layoutY="132.0" prefHeight="291.0" prefWidth="731.0">
+                    <columns>
+                      <TableColumn prefWidth="103.0" text="C1" />
+                      <TableColumn prefWidth="123.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="634.0" layoutY="478.0" mnemonicParsing="false" prefHeight="109.0" prefWidth="182.0" style="-fx-background-color: transparent;" text="Finalize the &#10;request" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="21.0" />
+                     </font>
+                  </Button>
+                  <ChoiceBox layoutX="85.0" layoutY="502.0" prefHeight="60.0" prefWidth="541.0" />
+                  <Label layoutX="148.0" layoutY="440.0" text="Pick the order" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="33.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
       </content>
     </Tab>
   </tabs>
