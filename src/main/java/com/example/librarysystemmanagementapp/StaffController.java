@@ -61,7 +61,7 @@ public class StaffController implements Initializable {
         authorColumn.setCellValueFactory(new PropertyValueFactory<Books,String>("author"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<Books,String>("returnDate"));
 
-        //tableOfBooks.setItems((ObservableList<Books>) booksList);
+        tableOfBooks.setItems((ObservableList<Books>) booksList);
     }
 }
 
