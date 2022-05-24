@@ -10,4 +10,5 @@ module com.example.librarysystemmanagementapp {
     exports com.example.librarysystemmanagementapp.exceptions;
     exports com.example.librarysystemmanagementapp.servicies;
     exports com.example.librarysystemmanagementapp.user;
+    exports com.example.librarysystemmanagementapp.books;
 }

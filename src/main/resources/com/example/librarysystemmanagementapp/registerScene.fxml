@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="387.0" fitWidth="254.0" layoutX="6.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Img/5652e9ec-2fa3-460b-8812-cdd4abf61b67.jpg" />
+                  <Image url="@Img/books.jpg" />
                </image>
             </ImageView>
             <Label layoutX="-56.0" layoutY="315.0" prefHeight="129.0" prefWidth="365.0" rotate="-73.5" text="Registration" textFill="WHITE">
@@ -30,7 +30,7 @@
          <children>
             <ImageView fitHeight="82.0" fitWidth="57.0" layoutX="48.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Img/279678652_305137018465144_3087291222441037550_n.png" />
+                  <Image url="@Img/lock.png" />
                </image>
             </ImageView>
             <Label layoutX="105.0" layoutY="232.0" text="Username:" textFill="WHITE">

@@ -30,4 +30,16 @@
   "username" : "Raresutu",
   "password" : "1234",
   "role" : "Library Staff"
+}, {
+  "username" : "test",
+  "password" : "test",
+  "role" : "Library Staff"
+}, {
+  "username" : "gigi",
+  "password" : "12",
+  "role" : "Customer"
+}, {
+  "username" : "gig",
+  "password" : "12",
+  "role" : "Library Staff"
 } ]
