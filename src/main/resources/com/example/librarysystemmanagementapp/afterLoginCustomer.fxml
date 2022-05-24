@@ -3,27 +3,34 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #162C53;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #162C53;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystemmanagementapp.CustomerController">
   <tabs>
     <Tab text="Available books">
          <content>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <ListView layoutX="65.0" layoutY="158.0" prefHeight="407.0" prefWidth="772.0" />
                   <Label alignment="CENTER" layoutY="45.0" prefHeight="70.0" prefWidth="900.0" text="Available books" textFill="WHITE">
                      <font>
                         <Font name="Lucida Calligraphy Italic" size="51.0" />
                      </font>
                   </Label>
+                  <TableView fx:id="tableOfBooks" layoutX="39.0" layoutY="137.0" prefHeight="398.0" prefWidth="829.0">
+                    <columns>
+                      <TableColumn fx:id="titleColumn" prefWidth="264.0" text="title" />
+                      <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="252.0" text="author" />
+                        <TableColumn fx:id="dateColumn" prefWidth="312.0" text="return date" />
+                    </columns>
+                  </TableView>
                </children>
             </AnchorPane>
          </content></Tab>
