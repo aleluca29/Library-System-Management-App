@@ -1,24 +1,26 @@
 package com.example.librarysystemmanagementapp.books;
 
-import com.example.librarysystemmanagementapp.Main;
-import com.example.librarysystemmanagementapp.user.Users;
-import com.example.librarysystemmanagementapp.exceptions.UsernameAlreadyExistsException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class BooksList {
 
-    private static ArrayList<Books> book = new ArrayList<>();
+    private static ArrayList<Book> booksArrayList = new ArrayList<>();
 
-    public static void addBooks(Books newBook){
+    public static void addBook(Book newBook){
         //checkBookDoesNotAlreadyExist(newBook.getUsername());  //throws BookAlreadyExistsException
-        book.add(newBook);
+        booksArrayList.add(newBook);
+    }
+
+    public static void removeBook(int bookId){
+        //checkBookDoesNotAlreadyExist(newBook.getUsername());  //throws BookAlreadyExistsException
+        booksArrayList.remove(bookId);
     }
 /*
     private static void checkBookDoesNotAlreadyExist(String username) throws BookAlreadyExistsException {
@@ -35,21 +37,32 @@ public class BooksList {
 
     @Override
     public String toString() {
-        return book.toString();
+        return booksArrayList.toString();
     }
 
     public static void loadBooksFromFile() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            book = objectMapper.readValue(Paths.get("books.json").toFile(), new TypeReference<>() {
+            booksArrayList = objectMapper.readValue(Paths.get("books.json").toFile(), new TypeReference<>() {
             });
         } catch (JsonParseException e) {
             e.printStackTrace();
         }
     }
 
-    public static ArrayList<Books> getBooks() {
-        return book;
+    public static void saveBooksToFile() throws IOException{
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("books.json"), booksArrayList);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
+    }
+
+
+    public static ArrayList<Book> getBooks() {
+        return booksArrayList;
     }
 
 }

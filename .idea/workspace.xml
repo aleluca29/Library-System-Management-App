@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e544019-a887-452d-b86e-7c1839e81c70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/books.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/BooksList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/BooksList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/servicies/BookWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/servicies/BookWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/StaffController$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/StaffController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/servicies/BookWrite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/servicies/BookWrite.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +139,8 @@
       <updated>1653082453768</updated>
       <workItem from="1653082455302" duration="63000" />
       <workItem from="1653082554846" duration="12968000" />
-      <workItem from="1653208734942" duration="22653000" />
+      <workItem from="1653208734942" duration="27115000" />
+      <workItem from="1653397935499" duration="2685000" />
     </task>
     <servers />
   </component>

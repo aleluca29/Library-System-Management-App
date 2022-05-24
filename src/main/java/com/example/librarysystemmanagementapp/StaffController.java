@@ -1,23 +1,21 @@
 package com.example.librarysystemmanagementapp;
 
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.example.librarysystemmanagementapp.books.Books;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.librarysystemmanagementapp.books.BooksList;
+import com.example.librarysystemmanagementapp.books.Book;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class StaffController implements Initializable {
@@ -26,42 +24,88 @@ public class StaffController implements Initializable {
     }
 
     @FXML
-    private TableColumn<Books, String> authorColumn;
+    private TableView<Book> tableOfBooks;
 
     @FXML
-    private TableColumn<Books, String> dateColumn;
+    private TableColumn<Book, String> authorColumn;
 
     @FXML
-    private TableView<Books> tableOfBooks;
+    private TableColumn<Book, String> dateColumn;
 
     @FXML
-    private TableColumn<Books,String> titleColumn;
+    private TableColumn<Book, String> titleColumn;
 
+    @FXML
+    private TextField dateText;
 
-   // public static void main(String[] args) {
+    @FXML
+    private TextField authorText;
 
+    @FXML
+    private TextField titleText;
 
-        final ObjectMapper objectMapper = new ObjectMapper();
-        List<Books> booksList = null;
+    @FXML
+    private Button removeButton;
 
-        {
-            try {
-                booksList = objectMapper.readValue(new File("books.json"), new TypeReference<>() {
-                });
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        //booksList.forEach(x -> System.out.println(x.toString()));
-   // }
+    @FXML
+    private Button submitButton;
+/*
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle){
-        titleColumn.setCellValueFactory(new PropertyValueFactory<Books,String>("title"));
-        authorColumn.setCellValueFactory(new PropertyValueFactory<Books,String>("author"));
-        dateColumn.setCellValueFactory(new PropertyValueFactory<Books,String>("returnDate"));
-
-        tableOfBooks.setItems((ObservableList<Books>) booksList);
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        titleColumn.setCellValueFactory(new PropertyValueFactory<Books, String>("title"));
+        authorColumn.setCellValueFactory(new PropertyValueFactory<Books, String>("author"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<Books, String>("returnDate"));
     }
-}
+*/
+    //Submit button
+    @FXML
+    void submit(ActionEvent event) throws IOException {
+        Book book = new Book(titleText.getText(), (authorText.getText()), (dateText.getText()));
+        ObservableList<Book> books = tableOfBooks.getItems();
+        books.add(book);
+        BooksList.addBook(book);
+        tableOfBooks.setItems(books);
+        BooksList.saveBooksToFile();
+    }
 
+    @FXML
+    void removeBook(ActionEvent event) throws IOException {
+        int selectedID = tableOfBooks.getSelectionModel().getSelectedIndex();
+        tableOfBooks.getItems().remove(selectedID);
+        BooksList.removeBook(selectedID);
+        BooksList.saveBooksToFile();
+    }
+
+
+/*
+    public static void main(String[] args) {
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        List<Books> booksList;
+        try {
+            booksList = objectMapper.readValue(Paths.get("books.json").toFile(), new TypeReference<>() {
+            });
+            booksList.forEach(x ->System.out.println(x.toString()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+*/
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        titleColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("title"));
+        authorColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("author"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("returnDate"));
+        try {
+            BooksList.loadBooksFromFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
+        ObservableList<Book> observableList = FXCollections.observableArrayList(BooksList.getBooks());
+        tableOfBooks.setItems(observableList);
+    }
+
+}
