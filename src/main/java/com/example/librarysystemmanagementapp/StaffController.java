@@ -78,21 +78,6 @@ public class StaffController implements Initializable {
     }
 
 
-/*
-    public static void main(String[] args) {
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        List<Books> booksList;
-        try {
-            booksList = objectMapper.readValue(Paths.get("books.json").toFile(), new TypeReference<>() {
-            });
-            booksList.forEach(x ->System.out.println(x.toString()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-*/
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         titleColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("title"));
