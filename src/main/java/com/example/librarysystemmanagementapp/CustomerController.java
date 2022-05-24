@@ -5,13 +5,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 
 public class CustomerController implements Initializable {
 
@@ -30,10 +30,20 @@ public class CustomerController implements Initializable {
     @FXML
     private TableColumn<Book, String> titleColumn;
 
+    @FXML
+    private TextField nameUser;
 
+    @FXML
+    private Button requestButton;
+
+    @FXML
+    private ChoiceBox<String> borrowBook;
+
+    private String[] options = {"title1", "title2"};
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         titleColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("title"));
         authorColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("author"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("returnDate"));
@@ -45,6 +55,9 @@ public class CustomerController implements Initializable {
         }
         ObservableList<Book> observableList = FXCollections.observableArrayList(BooksList.getBooks());
         tableOfBooks.setItems(observableList);
+
+        borrowBook.getItems().addAll(options);
     }
+
 
 }

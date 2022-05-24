@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="0e544019-a887-452d-b86e-7c1839e81c70" name="Changes" comment="" />
-
     <list default="true" id="0e544019-a887-452d-b86e-7c1839e81c70" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" afterDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
