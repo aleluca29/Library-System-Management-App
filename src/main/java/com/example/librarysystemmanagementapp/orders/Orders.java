@@ -1,14 +1,14 @@
-package com.example.librarysystemmanagementapp.books;
+package com.example.librarysystemmanagementapp.orders;
 
-public class Book {
+public class Orders {
     private String title;
     private String author;
     private String returnDate;
 
-    public Book() {
+    public Orders() {
     }
 
-    public Book(String title, String author, String returnDate)
+    public Orders(String title, String author, String returnDate)
     {
         this.title = title;
         this.author = author;
@@ -36,18 +36,6 @@ public class Book {
         this.returnDate = returnDate;
     }
 
-   // public String getNameUser() {return nameUser;}
-    //public void setNameUser(String title)
-    //{
-       // this.nameUser = nameUser;
-   // }
-
-    //public ChoiceBox<String> getTitleOrder() {return titleOrder;}
-    //public void setTitleOrder(String titleOrder)
-   // {
-       // this.titleOrder = titleOrder;
-    //}
-
     @Override
     public String toString() {
         return "Books{" +
@@ -56,6 +44,5 @@ public class Book {
                 ", returnDate='" + returnDate + '\'' +
                 '}';
     }
+
 }
-
-

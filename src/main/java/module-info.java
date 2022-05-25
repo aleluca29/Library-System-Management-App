@@ -11,4 +11,5 @@ module com.example.librarysystemmanagementapp {
     exports com.example.librarysystemmanagementapp.servicies;
     exports com.example.librarysystemmanagementapp.user;
     exports com.example.librarysystemmanagementapp.books;
+    exports com.example.librarysystemmanagementapp.orders;
 }

@@ -1,11 +1,8 @@
 package com.example.librarysystemmanagementapp;
 import com.example.librarysystemmanagementapp.books.Book;
 import com.example.librarysystemmanagementapp.books.BooksList;
-import com.example.librarysystemmanagementapp.exceptions.UsernameAlreadyExistsException;
-import com.example.librarysystemmanagementapp.servicies.OrderRegister;
-import com.example.librarysystemmanagementapp.servicies.Register;
-import com.example.librarysystemmanagementapp.user.Users;
-import com.example.librarysystemmanagementapp.user.UsersList;
+import com.example.librarysystemmanagementapp.orders.Orders;
+import com.example.librarysystemmanagementapp.orders.OrdersList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -20,6 +17,8 @@ import java.util.ResourceBundle;
 
 
 public class CustomerController implements Initializable {
+
+    private ObservableList<Orders> orders;
 
     public CustomerController() {
     }
@@ -55,7 +54,7 @@ public class CustomerController implements Initializable {
     private TextField titleCustomer;
 
     @FXML
-    private TableView<Book> tableOfOrders;
+    private TableView<Orders> tableOfOrders;
 
     @FXML
     private TableColumn<Book, String> titleOrder;
@@ -75,52 +74,37 @@ public class CustomerController implements Initializable {
 
         titleColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("title"));
         authorColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("author"));
-       dateColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("returnDate"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<Book, String>("returnDate"));
         try {
             BooksList.loadBooksFromFile();
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException();
-       }
+        }
         ObservableList<Book> observableList = FXCollections.observableArrayList(BooksList.getBooksArrayList());
         tableOfBooks.setItems(observableList);
 
         titleOrder.setCellValueFactory(new PropertyValueFactory<Book, String>("title"));
         authorOrder.setCellValueFactory(new PropertyValueFactory<Book, String>("author"));
         returnDateOrder.setCellValueFactory(new PropertyValueFactory<Book, String>("returnDate"));
-       // try {
-           // BooksList.loadBooksFromFile();
-       // } catch (IOException e) {
-         //   e.printStackTrace();
-           // throw new RuntimeException();
-       // }
-       // ObservableList<Book> observableList1 = FXCollections.observableArrayList(BooksList.getBooksArrayList());
-        //tableOfOrders.setItems(observableList1);
 
-        
+        ObservableList<Orders> observableList1 = FXCollections.observableArrayList(OrdersList.getOrdersArrayList());
+        tableOfOrders.setItems(observableList1);
 
-        //borrowBook.getItems().addAll(options); ///BooksList.getBooks()
     }
 
 
     @FXML
     void sendOrder(ActionEvent event) throws IOException {
-        Book book = new Book(titleCustomer.getText(), (authorCusmoter.getText()), (returnDateCustomer.getText()));
-        ObservableList<Book> books = tableOfOrders.getItems();
-        books.add(book);
-        BooksList.addBook(book);
-        tableOfOrders.setItems(books);
-        BooksList.saveBooksToOrder();
+        Orders book = new Orders(titleCustomer.getText(), (authorCusmoter.getText()), (returnDateCustomer.getText()));
+        ObservableList<Orders> orders = tableOfOrders.getItems();
+        orders.add(book);
+        OrdersList.addOrder(book);
+        tableOfOrders.setItems(orders);
+        OrdersList.saveBooksToOrder();
 
     }
-    /*public void userRegister(ActionEvent event) throws IOException {
-        checkRegister();
-    }
-    private void checkRegister() throws IOException {
 
-                //OrderRegister.addBook(title.getText(), borrowBook.getSelectionModel().getSelectedItem().toString());
-        BooksList.checkUserCredentials(new Users(username.getText(),password.getText(),role.getValue()))
-    }*/
 
 
 

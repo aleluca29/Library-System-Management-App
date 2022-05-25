@@ -60,16 +60,6 @@ public class BooksList {
         }
     }
 
-    public static void saveBooksToOrder() throws IOException{
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("booksOrder.json"), booksArrayList);
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
-    }
-
 
     public static String getBooks() {
         return String.valueOf(booksArrayList);
