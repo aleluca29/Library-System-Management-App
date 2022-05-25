@@ -1,5 +1,17 @@
 [ {
-  "title" : "hdh",
-  "author" : "hdh",
-  "returnDate" : "hdh"
+  "title" : "Mara",
+  "author" : "Ioan Slavici",
+  "returnDate" : "03/08/2022"
+}, {
+  "title" : "Morometii vol 1",
+  "author" : "Marin Preda",
+  "returnDate" : "02/02/2023"
+}, {
+  "title" : "Morometii vol 2",
+  "author" : "Marin Preda",
+  "returnDate" : "02/02/2023"
+}, {
+  "title" : "And Then There Were None",
+  "author" : "Agatha Christie",
+  "returnDate" : "01/03/2022"
 } ]

@@ -1,21 +1,49 @@
 [ {
-  "title" : "Ale",
-  "author" : "1234",
-  "returnDate" : "Customer"
+  "title" : "Maitreyi",
+  "author" : "Mircea Eliade",
+  "returnDate" : "12/09/2022"
 }, {
-  "title" : "ghj",
-  "author" : "jhg",
-  "returnDate" : "5456"
+  "title" : "Mara",
+  "author" : "Ioan Slavici",
+  "returnDate" : "03/08/2022"
 }, {
-  "title" : "hhhdh",
-  "author" : "bvfjkdvfh",
-  "returnDate" : "njdnrj"
+  "title" : "Morometii vol 1",
+  "author" : "Marin Preda",
+  "returnDate" : "02/02/2023"
 }, {
-  "title" : "d",
-  "author" : "bvfj",
-  "returnDate" : "327846"
+  "title" : "Morometii vol 2",
+  "author" : "Marin Preda",
+  "returnDate" : "02/02/2023"
 }, {
-  "title" : "hdh",
-  "author" : "ffee",
-  "returnDate" : "ff"
+  "title" : "Ion",
+  "author" : "Liviu Rebreanu",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Don Quixote",
+  "author" : "Miguel de Cervantes",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Lord of the Rings",
+  "author" : "J.R.R. Tolkien",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Harry Potter",
+  "author" : "J.K. Rowling",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "And Then There Were None",
+  "author" : "Agatha Christie",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Alice's Adventures in Wonderland",
+  "author" : "Lewis Carroll",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Pinocchio",
+  "author" : "Carlo Collodi",
+  "returnDate" : "01/03/2022"
+}, {
+  "title" : "Twenty Thousand Leagues Under the Sea",
+  "author" : "Jules Verne",
+  "returnDate" : "01/03/2022"
 } ]
