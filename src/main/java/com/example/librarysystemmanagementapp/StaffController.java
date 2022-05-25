@@ -89,7 +89,7 @@ public class StaffController implements Initializable {
             e.printStackTrace();
             throw new RuntimeException();
         }
-        ObservableList<Book> observableList = FXCollections.observableArrayList(BooksList.getBooks());
+        ObservableList<Book> observableList = FXCollections.observableArrayList(BooksList.getBooksArrayList());
         tableOfBooks.setItems(observableList);
     }
 
