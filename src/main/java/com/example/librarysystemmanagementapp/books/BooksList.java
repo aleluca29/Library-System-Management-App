@@ -30,10 +30,10 @@ public class BooksList {
         }
     }
 
-    public static boolean checkUserCredentials(Books book1) {
+    public static boolean checkUserCredentials(Books newBook) {
         return book.contains(book1);
-    }
-*/
+    }*/
+
 
     @Override
     public String toString() {
@@ -60,8 +60,21 @@ public class BooksList {
         }
     }
 
+    public static void saveBooksToOrder() throws IOException{
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("booksOrder.json"), booksArrayList);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
+    }
 
-    public static ArrayList<Book> getBooks() {
+
+    public static String getBooks() {
+        return String.valueOf(booksArrayList);
+    }
+    public static ArrayList<Book> getBooksArrayList() {
         return booksArrayList;
     }
 

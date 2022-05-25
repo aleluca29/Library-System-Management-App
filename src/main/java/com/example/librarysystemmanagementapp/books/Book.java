@@ -1,9 +1,14 @@
 package com.example.librarysystemmanagementapp.books;
 
+import javafx.scene.control.ChoiceBox;
+
 public class Book {
     private String title;
     private String author;
     private String returnDate;
+    //private String nameUser;
+    //private ChoiceBox<String> titleOrder;
+
 
     public Book() {
     }
@@ -14,6 +19,11 @@ public class Book {
         this.author = author;
         this.returnDate = returnDate;
     }
+
+   // public Book(String nameUser, ChoiceBox<String> titleOrder) {
+
+       // this.nameUser=nameUser;
+   // }
 
     public String getTitle() {return title;}
     public void setTitle(String title)
@@ -35,6 +45,18 @@ public class Book {
     {
         this.returnDate = returnDate;
     }
+
+   // public String getNameUser() {return nameUser;}
+    //public void setNameUser(String title)
+    //{
+       // this.nameUser = nameUser;
+   // }
+
+    //public ChoiceBox<String> getTitleOrder() {return titleOrder;}
+    //public void setTitleOrder(String titleOrder)
+   // {
+       // this.titleOrder = titleOrder;
+    //}
 
     @Override
     public String toString() {
