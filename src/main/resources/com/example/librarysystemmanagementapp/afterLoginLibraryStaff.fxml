@@ -19,7 +19,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TableView fx:id="tableOfBooks" editable="true" layoutX="414.0" layoutY="79.0" prefHeight="447.0" prefWidth="430.0">
+                  <TableView fx:id="tableOfBooks" editable="true" layoutX="414.0" layoutY="142.0" prefHeight="384.0" prefWidth="430.0">
                     <columns>
                       <TableColumn fx:id="titleColumn" prefWidth="147.0" text="Title" />
                       <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="171.0" text="Author" />
@@ -29,31 +29,46 @@
                         <Glow />
                      </effect>
                   </TableView>
-                  <TextField fx:id="titleText" layoutX="95.0" layoutY="184.0" prefHeight="52.0" prefWidth="257.0" promptText="Title">
+                  <TextField fx:id="titleText" layoutX="86.0" layoutY="328.0" prefHeight="52.0" prefWidth="257.0" promptText="Title">
                      <font>
                         <Font name="Lucida Calligraphy Italic" size="12.0" />
                      </font></TextField>
-                  <TextField fx:id="authorText" layoutX="94.0" layoutY="286.0" prefHeight="49.0" prefWidth="259.0" promptText="Author">
+                  <TextField fx:id="authorText" layoutX="85.0" layoutY="401.0" prefHeight="49.0" prefWidth="259.0" promptText="Author">
                      <font>
                         <Font name="Lucida Calligraphy Italic" size="12.0" />
                      </font></TextField>
-                  <TextField fx:id="dateText" layoutX="95.0" layoutY="384.0" prefHeight="51.0" prefWidth="256.0" promptText="Return date">
+                  <TextField fx:id="dateText" layoutX="86.0" layoutY="475.0" prefHeight="51.0" prefWidth="256.0" promptText="Return date">
                      <font>
                         <Font name="Lucida Calligraphy Italic" size="12.0" />
                      </font></TextField>
-                  <Button fx:id="submitButton" layoutX="152.0" layoutY="472.0" mnemonicParsing="false" onAction="#submit" text="Submit a book" textFill="#162c53">
+                  <Button fx:id="submitButton" layoutX="108.0" layoutY="547.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: transparent;" text="Submit a book" textFill="WHITE" underline="true">
                      <font>
-                        <Font name="Lucida Calligraphy Italic" size="14.0" />
+                        <Font name="Lucida Calligraphy Italic" size="24.0" />
                      </font></Button>
-                  <Button fx:id="removeButton" layoutX="564.0" layoutY="547.0" mnemonicParsing="false" onAction="#removeBook" text="Remove a book" textFill="#162c53">
+                  <Button fx:id="removeButton" layoutX="517.0" layoutY="547.0" mnemonicParsing="false" onAction="#removeBook" style="-fx-background-color: transparent;" text="Remove a book" textFill="WHITE" underline="true">
                      <font>
-                        <Font name="Lucida Calligraphy Italic" size="14.0" />
+                        <Font name="Lucida Calligraphy Italic" size="24.0" />
                      </font></Button>
-                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="154.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="154.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Img/280213384_750752746339831_696126824693918294_n.png" />
                      </image>
                   </ImageView>
+                  <Label layoutX="155.0" layoutY="14.0" text="Modify the books in the library" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="256.0" text="Add a new book to library" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="548.0" layoutY="82.0" prefHeight="47.0" prefWidth="162.0" text="Bookshelf" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="31.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
         </content>
@@ -62,16 +77,16 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: transparent;">
                <children>
-                  <Label layoutX="215.0" layoutY="52.0" text="Orders to be processed" textFill="WHITE">
+                  <Label layoutX="215.0" layoutY="52.0" text="Orders to be processed" textFill="WHITE" underline="true">
                      <font>
                         <Font name="Lucida Calligraphy Italic" size="40.0" />
                      </font>
                   </Label>
                   <TableView fx:id="tableOfOrdersStaff" layoutX="85.0" layoutY="132.0" prefHeight="291.0" prefWidth="731.0">
                     <columns>
-                      <TableColumn fx:id="titleColumnStaffOrder" prefWidth="239.0" text="Title" />
-                      <TableColumn fx:id="authorColumnStaffOrder" prefWidth="225.0" text="Author" />
-                        <TableColumn fx:id="returnDateColumnStaffOrder" prefWidth="266.0" text="Return Date" />
+                      <TableColumn fx:id="titleColumnStaffOrder" prefWidth="232.0" text="Title" />
+                      <TableColumn fx:id="authorColumnStaffOrder" prefWidth="246.0" text="Author" />
+                        <TableColumn fx:id="returnDateColumnStaffOrder" prefWidth="252.0" text="Return Date" />
                     </columns>
                   </TableView>
                   <Button fx:id="finalizeRequest" layoutX="276.0" layoutY="491.0" mnemonicParsing="false" onAction="#removeFromOrder" prefHeight="82.0" prefWidth="349.0" style="-fx-background-color: transparent;" text="Finalize the request" textAlignment="CENTER" textFill="WHITE" underline="true">

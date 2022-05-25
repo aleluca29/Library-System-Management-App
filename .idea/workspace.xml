@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="343b5781-5c28-4620-a7a2-165bd4c3de7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/orders/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/orders/OrdersList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/orders/Orders.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/orders/OrdersList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booksOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/booksOrder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/BooksList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarysystemmanagementapp/books/BooksList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/librarysystemmanagementapp/books/BooksList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarysystemmanagementapp/afterLoginLibraryStaff.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

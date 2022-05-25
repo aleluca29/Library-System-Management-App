@@ -42,4 +42,12 @@
   "username" : "gig",
   "password" : "12",
   "role" : "Library Staff"
+}, {
+  "username" : "a",
+  "password" : "1",
+  "role" : "Customer"
+}, {
+  "username" : "b",
+  "password" : "1",
+  "role" : "Library Staff"
 } ]
