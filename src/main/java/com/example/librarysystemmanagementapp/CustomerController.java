@@ -106,7 +106,11 @@ public class CustomerController implements Initializable {
     }
 
 
-
+    @FXML
+    void LogOut(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("initial.fxml");
+    }
 
 
 }

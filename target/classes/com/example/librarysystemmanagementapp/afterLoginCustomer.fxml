@@ -30,11 +30,15 @@
                         <TableColumn fx:id="dateColumn" prefWidth="295.0" text="Return date" />
                     </columns>
                   </TableView>
-                  <ImageView fitHeight="219.0" fitWidth="194.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="219.0" fitWidth="194.0" layoutX="692.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Img/281889769_1045554916345458_1635123852891906441_n.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="logOutCustomerTab1" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="15.0" />
+                     </font></Button>
                </children>
             </AnchorPane>
          </content></Tab>
@@ -89,6 +93,11 @@
                         <Font name="Lucida Calligraphy Italic" size="36.0" />
                      </font>
                   </Label>
+                  <Button fx:id="logOutCustomerTab11" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="15.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </content></Tab>

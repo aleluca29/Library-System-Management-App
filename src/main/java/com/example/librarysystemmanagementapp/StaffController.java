@@ -123,4 +123,10 @@ public class StaffController implements Initializable {
         OrdersList.saveBooksToOrder();
     }
 
+    @FXML
+    void LogOut(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("initial.fxml");
+    }
+
 }

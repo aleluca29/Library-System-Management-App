@@ -69,6 +69,11 @@
                         <Font name="Lucida Calligraphy Italic" size="31.0" />
                      </font>
                   </Label>
+                  <Button fx:id="logOutCustomerTab1" mnemonicParsing="false" onAction="#LogOut" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="15.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
         </content>
@@ -99,6 +104,11 @@
                         <Font name="Lucida Calligraphy Italic" size="33.0" />
                      </font>
                   </Label>
+                  <Button fx:id="logOutCustomerTab11" mnemonicParsing="false" onAction="#LogOut" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="15.0" />
+                     </font>
+                  </Button>
                </children></AnchorPane>
       </content>
     </Tab>
